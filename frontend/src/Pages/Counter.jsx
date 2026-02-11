@@ -7,10 +7,9 @@ const Counter = () => {
 
     const counters = useSelector((state) => state.counters)
 
-
     
   return (
-    <div className='w-full h-screen bg-gray-100 flex items-center justify-center'>
+    <div className='w-full flex items-center justify-center'>
         <div className='bg-white py-6 px-10 flex flex-col items-center justify-center'>
             <p className='text-2xl font-bold mb-6'>Counter App</p>
             <p className='text-3xl font-medium mb-6'>{counters.value}</p>
