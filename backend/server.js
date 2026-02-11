@@ -6,9 +6,6 @@ import cors from 'cors'
 
 dotenv.config()
 
-const allowedOrigins = [
-    'http://localhost:5173'
-]
 
 const app = express()
 const PORT = process.env.PORT || 3000;
