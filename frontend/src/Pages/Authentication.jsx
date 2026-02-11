@@ -7,7 +7,7 @@ import { setUserData } from '../features/user/userSlice';
 
 
 const Authentication = ({setIsAuthPopup}) => {
-    const [isLoginPage, setIsLoginPage] = useState(false);
+    const [isLoginPage, setIsLoginPage] = useState(true);
     const [userAuthData, setUserAuthData] = useState({})
 
     const handleOnchange = (e) => {

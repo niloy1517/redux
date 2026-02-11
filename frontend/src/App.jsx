@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import { useSelector } from 'react-redux';
 
 const App = () => {
-  const [isAuthPopup, setIsAuthPopup] = useState(true);
+  const [isAuthPopup, setIsAuthPopup] = useState(false);
 
   const user = useSelector((state) => state.user);
   return (
