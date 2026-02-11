@@ -55,7 +55,7 @@ const userLogin = async (req, res) => {
 
         const user = await userModel.findOne({ email })
 
-        if (!user && !validator.isEmail(email)) {
+        if (!user) {
             return res.status(400).json({ success: false, message: 'Please enter vaild email' })
         }
 
