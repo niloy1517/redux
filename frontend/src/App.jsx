@@ -8,7 +8,8 @@ import { useSelector } from 'react-redux';
 const App = () => {
   const [isAuthPopup, setIsAuthPopup] = useState(false);
 
-  const user = useSelector((state) => state.user);
+  const userData = useSelector((state) => state.user.userData);
+  
   return (
     <div className='w-full h-screen bg-gray-100'>
       <ToastContainer />
@@ -20,7 +21,7 @@ const App = () => {
         }
 
         {
-          user &&
+          userData &&
           <Counter />
         }
       </div>
